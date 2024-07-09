@@ -5,16 +5,16 @@
 //  Created by Shah Md Imran Hossain on 10/7/24.
 //
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 @Model
 final class MyList {
     @Attribute(.unique) var name: String
-    var color: Color
+    var colorHex: String
     
-    init(name: String, color: Color) {
+    init(name: String, colorHex: String) {
         self.name = name
-        self.color = color
+        self.colorHex = colorHex
     }
 }
