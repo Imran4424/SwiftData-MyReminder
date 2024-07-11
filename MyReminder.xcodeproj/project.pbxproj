@@ -14,6 +14,7 @@
 		1D5AECA82C3DB2E000ABC9F9 /* MyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AECA72C3DB2E000ABC9F9 /* MyList.swift */; };
 		1D5AECAA2C3DBBA400ABC9F9 /* AddNewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AECA92C3DBBA400ABC9F9 /* AddNewListView.swift */; };
 		1D5AECAE2C3DBE9600ABC9F9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AECAD2C3DBE9600ABC9F9 /* Extensions.swift */; };
+		1D9CA1532C3FB0E9008F7AB2 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9CA1522C3FB0E9008F7AB2 /* ColorPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		1D5AECA72C3DB2E000ABC9F9 /* MyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyList.swift; sourceTree = "<group>"; };
 		1D5AECA92C3DBBA400ABC9F9 /* AddNewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewListView.swift; sourceTree = "<group>"; };
 		1D5AECAD2C3DBE9600ABC9F9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1D9CA1522C3FB0E9008F7AB2 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				1D5AEC972C3DB05100ABC9F9 /* ContentView.swift */,
 				1D5AECA92C3DBBA400ABC9F9 /* AddNewListView.swift */,
+				1D9CA1522C3FB0E9008F7AB2 /* ColorPickerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			files = (
 				1D5AECAE2C3DBE9600ABC9F9 /* Extensions.swift in Sources */,
 				1D5AEC982C3DB05100ABC9F9 /* ContentView.swift in Sources */,
+				1D9CA1532C3FB0E9008F7AB2 /* ColorPickerView.swift in Sources */,
 				1D5AECAA2C3DBBA400ABC9F9 /* AddNewListView.swift in Sources */,
 				1D5AEC962C3DB05100ABC9F9 /* MyReminderApp.swift in Sources */,
 				1D5AECA82C3DB2E000ABC9F9 /* MyList.swift in Sources */,
