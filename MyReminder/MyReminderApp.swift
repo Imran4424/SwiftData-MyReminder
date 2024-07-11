@@ -19,7 +19,7 @@ struct MyReminderApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
                 .modelContainer(container)
         }
     }
