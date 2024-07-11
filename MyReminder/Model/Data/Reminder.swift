@@ -10,6 +10,7 @@ import SwiftUI
 
 @Model
 final class Reminder {
+    @Attribute(.unique) var id: String
     var title: String
     var notes: String?
     var isCompleted: Bool
@@ -17,6 +18,7 @@ final class Reminder {
     var reminderDate: Date?
     
     init(title: String, notes: String? = nil, isCompleted: Bool = false, reminderDate: Date? = nil) {
+        id = UUID().uuidString
         self.title = title
         self.notes = notes
         self.isCompleted = isCompleted

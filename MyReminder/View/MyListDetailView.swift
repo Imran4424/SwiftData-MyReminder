@@ -5,7 +5,9 @@
 //  Created by Shah Md Imran Hossain on 11/7/24.
 //
 
+import SwiftData
 import SwiftUI
+
 
 struct MyListDetailView: View {
     let myList: MyList
@@ -20,6 +22,7 @@ struct MyListDetailView: View {
     var body: some View {
         VStack {
             // display list of reminders
+            ReminderListView(reminders: myList.reminderList)
             
             HStack {
                 Image(systemName: "plus.circle.fill")
@@ -36,7 +39,9 @@ struct MyListDetailView: View {
             Button("Cancel", role: .cancel) { }
             
             Button("Save") {
+                let reminder = Reminder(title: title)
                 
+                myList.reminderList.append(reminder)
             }
             .disabled(!isFormValid)
         }
