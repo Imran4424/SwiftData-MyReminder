@@ -18,10 +18,7 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                List(myLists) { listItem in
-                    Text(listItem.name)
-                }
-                
+                MyListView(myLists: myLists)
                 
                 Spacer()
                 
@@ -38,7 +35,7 @@ struct HomeView: View {
             .sheet(isPresented: $isAddListPresented) {
                 NavigationStack {
                     AddNewListView { name, color in
-                        let myList = MyList(name: name, colorHex: color.toHex() ?? "#FF0000")
+                        let myList = MyList(name: name, colorHex: color.toHex() ?? "FF0000")
                         
                         context.insert(myList)
                         
