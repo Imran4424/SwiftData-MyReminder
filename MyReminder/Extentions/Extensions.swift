@@ -29,9 +29,9 @@ extension Color {
         }
         
         
-        let r: Float = Float(components[0])
-        let g: Float = Float(components[1])
-        let b: Float = Float(components[2])
+        let r = components[0]
+        let g = components[1]
+        let b = components[2]
         
         let hexString = String(
             format: "%02lX%02lX%02lX",
