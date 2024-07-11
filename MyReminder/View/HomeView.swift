@@ -5,16 +5,23 @@
 //  Created by Shah Md Imran Hossain on 9/7/24.
 //
 
+import SwiftData
 import SwiftUI
 
 struct HomeView: View {
     @Environment(\.modelContext) var context
+    
+    @Query(sort: \MyList.name) var myLists: [MyList]
     
     @State private var isAddListPresented: Bool = false
     
     var body: some View {
         NavigationStack {
             VStack {
+                List(myLists) { listItem in
+                    Text(listItem.name)
+                }
+                
                 
                 Spacer()
                 
