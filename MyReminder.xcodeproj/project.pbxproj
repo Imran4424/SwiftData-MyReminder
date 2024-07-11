@@ -15,6 +15,7 @@
 		1D5AECAA2C3DBBA400ABC9F9 /* AddNewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AECA92C3DBBA400ABC9F9 /* AddNewListView.swift */; };
 		1D5AECAE2C3DBE9600ABC9F9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AECAD2C3DBE9600ABC9F9 /* Extensions.swift */; };
 		1D608F7B2C40022D002CB0F2 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D608F7A2C40022D002CB0F2 /* Reminder.swift */; };
+		1D608F7D2C4007B4002CB0F2 /* MyListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D608F7C2C4007B4002CB0F2 /* MyListDetailView.swift */; };
 		1D9CA1532C3FB0E9008F7AB2 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9CA1522C3FB0E9008F7AB2 /* ColorPickerView.swift */; };
 		1D9CA1552C3FDD8C008F7AB2 /* MyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9CA1542C3FDD8C008F7AB2 /* MyListView.swift */; };
 		1D9CA1572C3FDF13008F7AB2 /* MyListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9CA1562C3FDF13008F7AB2 /* MyListCellView.swift */; };
@@ -30,6 +31,7 @@
 		1D5AECA92C3DBBA400ABC9F9 /* AddNewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewListView.swift; sourceTree = "<group>"; };
 		1D5AECAD2C3DBE9600ABC9F9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1D608F7A2C40022D002CB0F2 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		1D608F7C2C4007B4002CB0F2 /* MyListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListDetailView.swift; sourceTree = "<group>"; };
 		1D9CA1522C3FB0E9008F7AB2 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		1D9CA1542C3FDD8C008F7AB2 /* MyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListView.swift; sourceTree = "<group>"; };
 		1D9CA1562C3FDF13008F7AB2 /* MyListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListCellView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				1D5AEC972C3DB05100ABC9F9 /* HomeView.swift */,
 				1D5AECA92C3DBBA400ABC9F9 /* AddNewListView.swift */,
 				1D9CA1542C3FDD8C008F7AB2 /* MyListView.swift */,
+				1D608F7C2C4007B4002CB0F2 /* MyListDetailView.swift */,
 				1D9CA1562C3FDF13008F7AB2 /* MyListCellView.swift */,
 				1D9CA1522C3FB0E9008F7AB2 /* ColorPickerView.swift */,
 			);
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D5AECAE2C3DBE9600ABC9F9 /* Extensions.swift in Sources */,
+				1D608F7D2C4007B4002CB0F2 /* MyListDetailView.swift in Sources */,
 				1D5AEC982C3DB05100ABC9F9 /* HomeView.swift in Sources */,
 				1D9CA1552C3FDD8C008F7AB2 /* MyListView.swift in Sources */,
 				1D9CA1532C3FB0E9008F7AB2 /* ColorPickerView.swift in Sources */,

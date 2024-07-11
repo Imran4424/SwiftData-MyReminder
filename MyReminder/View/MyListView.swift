@@ -29,7 +29,8 @@ struct MyListView: View {
                     }
                     .scrollContentBackground(.hidden)
                     .navigationDestination(for: MyList.self) { myList in
-                        Text(myList.name)
+                        MyListDetailView(myList: myList)
+                            .navigationTitle(myList.name)
                     }
                 }
             }
