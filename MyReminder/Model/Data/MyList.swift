@@ -12,6 +12,8 @@ import SwiftUI
 final class MyList {
     @Attribute(.unique) var name: String
     var colorHex: String
+    // this just marked one to many relationship with Reminders
+    var reminderList: [Reminder] = []
     
     init(name: String, colorHex: String) {
         self.name = name
