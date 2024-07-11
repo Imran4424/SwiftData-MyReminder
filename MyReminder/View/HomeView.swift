@@ -8,14 +8,43 @@
 import SwiftUI
 
 struct HomeView: View {
+    @Environment(\.modelContext) var context
+    
+    @State private var isAddListPresented: Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                
+                Spacer()
+                
+                Button {
+                    isAddListPresented = true
+                } label: {
+                    Text("Add List")
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .font(.headline)
+                }
+                .padding()
+
+            }
+            .sheet(isPresented: $isAddListPresented) {
+                NavigationStack {
+                    AddNewListView { name, color in
+                        let myList = MyList(name: name, colorHex: color.toHex() ?? "#FF0000")
+                        
+                        context.insert(myList)
+                        
+                        do {
+                            try context.save()
+                        } catch {
+                            print("[SwiftData] error saving the model \(error.localizedDescription)")
+                        }
+                        
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
 
